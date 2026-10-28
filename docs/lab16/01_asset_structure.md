@@ -104,7 +104,7 @@ ur10_with_gripper.usda
 打开：
 
 ```text
-E:\programee\IsaacSim_learning\IsaacSim_16\16_USD_FOR_ROBOTICS\joint_types.usd
+<ISAAC_16_ROOT>/16_USD_FOR_ROBOTICS/joint_types.usd
 ```
 
 识别至少 5 种关节：

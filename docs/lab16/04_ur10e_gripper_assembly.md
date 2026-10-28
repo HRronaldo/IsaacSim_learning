@@ -34,10 +34,10 @@
 ## 3. 创建组装文件（不要用 Create Sublayer）
 
 1. `File > Open` 打开：
-   `E:\programee\IsaacSim_learning\work\lab16\ur10_1\ur10.usda`
+   `work/lab16/ur10_1/ur10.usda`
 2. `File > Save As`
 3. 保存到：
-   `E:\programee\IsaacSim_learning\work\lab16\ur10_1\ur10_with_gripper.usda`
+   `work/lab16/ur10_1/ur10_with_gripper.usda`
 
 **必须放在 `ur10_1/` 里面**，因为 `ur10.usda` 用的是相对引用 `./payloads/base.usda`。
 
@@ -73,7 +73,7 @@ Stage > ur10 > robotiq_2f_140  →  右键  →  Add > Reference
 
 选：
 
-`E:\programee\IsaacSim_learning\work\lab16\robotiq_2f_140\robotiq_2f_140.usda`
+`work/lab16/robotiq_2f_140/robotiq_2f_140.usda`
 
 **Prim Path 保持 `<Default Prim>`**，点 Select。
 

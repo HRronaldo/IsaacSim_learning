@@ -1,4 +1,4 @@
-﻿# Lab19 M3：BC-RNN 模仿学习训练
+# Lab19 M3：BC-RNN 模仿学习训练
 
 > 目标：用生成数据训练 BC-RNN 策略，并在仿真中回放，完成方块堆叠。
 
@@ -55,8 +55,8 @@ Windows：
 isaaclab.bat -p scripts/imitation_learning/robomimic/train.py `
   --task IsaacContrib-Stack-Cube-Franka-IK-Rel `
   --algo bc `
-  --dataset E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\generated_dataset.hdf5 `
-  --log_dir E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\training_logs
+  --dataset <ISAAC_19_ROOT>/19_SMMG/datasets/generated_dataset.hdf5 `
+  --log_dir <ISAAC_19_ROOT>/19_SMMG/training_logs
 ```
 
 默认每 100 epoch 保存一次 checkpoint。
@@ -81,7 +81,7 @@ training_logs/IsaacContrib-Stack-Cube-Franka-IK-Rel/smoke_bc_m1/20261026160620/m
 isaaclab.bat -p scripts/imitation_learning/robomimic/play.py `
   --task IsaacContrib-Stack-Cube-Franka-IK-Rel `
   --num_rollouts 10 `
-  --checkpoint E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\training_logs\...\model_epoch_1200.pth `
+  --checkpoint <ISAAC_19_ROOT>/19_SMMG/training_logs/.../model_epoch_1200.pth `
   --seed 100
 ```
 

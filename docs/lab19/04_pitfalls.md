@@ -1,4 +1,4 @@
-﻿# Lab19 踩坑记录
+# Lab19 踩坑记录
 
 > 状态：**已实操记录**。  
 > 当前基线：200 条 3.0 Mimic 数据 + 500 epoch，回放 4/10 = **40% success**。  
@@ -18,8 +18,8 @@
 | `Fatal Python error: init_fs_encoding ... null bytes` | 训练和 play 同时启动/多个 Isaac Lab 进程 | 只保留一个 Isaac Lab 进程；先彻底停止训练，再 play |
 | `egl_probe` 构建失败 | `CMake must be installed` | training/play 不需要 `egl_probe`；用 `pip install --no-deps robomimic` |
 | 旧任务名 `Isaac-Stack-Cube-Franka-IK-Rel-v0` | `TaskNotFound` | 3.0 用 `IsaacContrib-Stack-Cube-Franka-IK-Rel` |
-| `isaaclab_mimic` 未安装 | `ModuleNotFoundError: isaaclab_mimic` | `pip install -e E:\program\isaac_sim\IsaacLab\source\isaaclab_mimic --no-deps` |
-| `isaaclab_teleop` 未安装 | `ModuleNotFoundError: isaaclab_teleop`，来自 `isaaclab.devices.openxr` | `pip install -e E:\program\isaac_sim\IsaacLab\source\isaaclab_teleop --no-deps` |
+| `isaaclab_mimic` 未安装 | `ModuleNotFoundError: isaaclab_mimic` | `pip install -e <ISAACLAB_ROOT>\source\isaaclab_mimic --no-deps` |
+| `isaaclab_teleop` 未安装 | `ModuleNotFoundError: isaaclab_teleop`，来自 `isaaclab.devices.openxr` | `pip install -e <ISAACLAB_ROOT>\source\isaaclab_teleop --no-deps` |
 | `isaaclab.bat` 选到系统 Python 3.13 | 报 “3.12 is required” | 先 `conda activate isaacsim`，确认 `CONDA_PREFIX` |
 | Windows 路径 | Linux 命令/路径不识别 | 用 `isaaclab.bat -p`，所有路径改成本地绝对路径 |
 | XR 设备不可用 | 无法用 Apple Vision Pro | 用 keyboard，或直接用官方 `dataset.hdf5` |

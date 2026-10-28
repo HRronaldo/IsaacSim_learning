@@ -108,7 +108,7 @@ robot.usda
 打开：
 
 ```text
-E:\programee\IsaacSim_learning\IsaacSim_16\16_USD_FOR_ROBOTICS\joint_types.usd
+<ISAAC_16_ROOT>/16_USD_FOR_ROBOTICS/joint_types.usd
 ```
 
 在 Stage 里展开 `/World`，逐个点关节，看 Property 面板。

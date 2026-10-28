@@ -1,4 +1,4 @@
-﻿# Day 1 速查卡：环境 + URDF/USD 基础（Lab 16 模块 1）
+# Day 1 速查卡：环境 + URDF/USD 基础（Lab 16 模块 1）
 
 > 目标（30-60 分钟）：跑起 Isaac Sim GUI，理解 URDF/USD 的最基本概念，产出第一张截图。
 > 教程入口：E:/programee/IsaacSim_learning/IsaacSim_16/16_usd_robo_lab_instructions/gtc25-16-usd-for-robotics/index.html
@@ -22,7 +22,7 @@ isaaclab -p E:/program/isaac_sim/IsaacLab/scripts/tools/record_demos.py --help
 
 > `env.sh` 不是必需品，只是可选的“激活 + 目录快捷命令”脚本：
 > `source /e/programee/IsaacSim_learning/work/env.sh`
-> 备用 PowerShell：`. E:\programee\IsaacSim_learning\work\env.ps1`
+> 备用 PowerShell：`. .\work\env.ps1`
 > 已实测：`conda activate isaacsim` 后 python 3.12.14、isaacsim/isaaclab 均在 PATH。
 
 - 首次启动要编译 shader，等 2-5 分钟，直到终端/日志出现 **“Isaac Sim Full App is loaded”** 再操作。

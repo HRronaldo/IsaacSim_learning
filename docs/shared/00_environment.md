@@ -25,14 +25,21 @@
 ## 2. 目录约定
 
 ```text
-E:\programee\IsaacSim_learning\
-├─ docs\                 教程与知识库
-├─ work\                 实际资产、URDF、USD、备份
-├─ IsaacSim_16\          GTC Lab16 原始资料
-├─ IsaacSim_18\          Isaac ROS（暂时跳过）
-├─ IsaacSim_19\          SMMG（下一阶段）
-└─ instructions_sil\     MEGA（ROS/SIL，暂时跳过）
+<repo>/                         GitHub 仓库（公开部分）
+├─ docs/                 教程与知识库（GitBook 渲染这一层）
+└─ work/                 实际资产、URDF、USD、备份
+
+以下为本地课程资料，体积大或涉及第三方版权，不随仓库分发：
+├─ IsaacSim_16/          GTC Lab16 原始资料
+├─ IsaacSim_18/          Isaac ROS（暂时跳过）
+├─ IsaacSim_19/          SMMG（下一阶段）
+└─ instructions_sil/     MEGA（ROS/SIL，暂时跳过）
 ```
+
+> **占位符约定**（教程中出现的尖括号路径请按自己的实际位置替换）：
+> - `<repo>` — 本仓库根目录，例如 `D:\code\IsaacSim_learning`
+> - `<ISAAC_16_ROOT>` / `<ISAAC_19_ROOT>` — NVIDIA 官方课程目录（`IsaacSim_16/`、`IsaacSim_19/` 的上一级），不随仓库分发
+> - `<ISAACLAB_ROOT>` — Isaac Lab 安装目录，例如 `<你的安装位置>\IsaacLab`
 
 ---
 
@@ -62,7 +69,7 @@ source /e/programee/IsaacSim_learning/work/env.sh
 PowerShell 备用：
 
 ```powershell
-. E:\programee\IsaacSim_learning\work\env.ps1
+. .\work\env.ps1
 ```
 
 > `env.sh` / `env.ps1` 不是必需品，只是激活环境 + 目录快捷命令。

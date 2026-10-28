@@ -1,4 +1,4 @@
-﻿# Lab19 M2：GR00T-Mimic 数据生成
+# Lab19 M2：GR00T-Mimic 数据生成
 
 > 目标：把 10 条人类演示标注成子任务，再用 GR00T-Mimic 扩展成大量合成演示。
 
@@ -32,8 +32,8 @@ Windows：
 
 ```powershell
 isaaclab.bat -p scripts/imitation_learning/isaaclab_mimic/annotate_demos.py `
-  --input_file E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\dataset.hdf5 `
-  --output_file E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\annotated_dataset.hdf5 `
+  --input_file <ISAAC_19_ROOT>/19_SMMG/datasets/dataset.hdf5 `
+  --output_file <ISAAC_19_ROOT>/19_SMMG/datasets/annotated_dataset.hdf5 `
   --task Isaac-Stack-Cube-Franka-IK-Rel-Mimic-v0 `
   --auto
 ```
@@ -48,8 +48,8 @@ isaaclab.bat -p scripts/imitation_learning/isaaclab_mimic/annotate_demos.py `
 
 ```powershell
 isaaclab.bat -p scripts/imitation_learning/isaaclab_mimic/generate_dataset.py `
-  --input_file E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\annotated_dataset.hdf5 `
-  --output_file E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\generated_dataset_small.hdf5 `
+  --input_file <ISAAC_19_ROOT>/19_SMMG/datasets/annotated_dataset.hdf5 `
+  --output_file <ISAAC_19_ROOT>/19_SMMG/datasets/generated_dataset_small.hdf5 `
   --num_envs 10 `
   --generation_num_trials 10
 ```
@@ -59,7 +59,7 @@ isaaclab.bat -p scripts/imitation_learning/isaaclab_mimic/generate_dataset.py `
 ```powershell
 isaaclab.bat -p scripts/tools/replay_demos.py `
   --task IsaacContrib-Stack-Cube-Franka-IK-Rel `
-  --dataset_file E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\generated_dataset_small.hdf5
+  --dataset_file <ISAAC_19_ROOT>/19_SMMG/datasets/generated_dataset_small.hdf5
 ```
 
 ---
@@ -70,8 +70,8 @@ RTX 5080 16GB 不要直接上 `400`，先试 `50`：
 
 ```powershell
 isaaclab.bat -p scripts/imitation_learning/isaaclab_mimic/generate_dataset.py `
-  --input_file E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\annotated_dataset.hdf5 `
-  --output_file E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\generated_dataset.hdf5 `
+  --input_file <ISAAC_19_ROOT>/19_SMMG/datasets/annotated_dataset.hdf5 `
+  --output_file <ISAAC_19_ROOT>/19_SMMG/datasets/generated_dataset.hdf5 `
   --num_envs 50 `
   --generation_num_trials 200 `
   --headless

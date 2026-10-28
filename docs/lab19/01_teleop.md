@@ -1,4 +1,4 @@
-﻿# Lab19 M1：遥操作数据采集
+# Lab19 M1：遥操作数据采集
 
 > 目标：用键盘或 XR 控制 Franka，完成 10 条 Stack-Cube 人类演示，保存为 HDF5。
 
@@ -60,12 +60,12 @@ cd /e/program/isaac_sim/IsaacLab
 PowerShell 等价：
 
 ```powershell
-cd E:\program\isaac_sim\IsaacLab
+cd <ISAACLAB_ROOT>
 isaaclab.bat -p scripts/tools/record_demos.py `
   --task IsaacContrib-Stack-Cube-Franka-IK-Rel `
   --teleop_device keyboard `
   --device cpu `
-  --dataset_file E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\dataset.hdf5 `
+  --dataset_file <ISAAC_19_ROOT>/19_SMMG/datasets/dataset.hdf5 `
   --num_demos 10
 ```
 
@@ -88,7 +88,7 @@ isaaclab.bat -p scripts/tools/record_demos.py `
 ```powershell
 isaaclab.bat -p scripts/tools/replay_demos.py `
   --task IsaacContrib-Stack-Cube-Franka-IK-Rel `
-  --dataset_file E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\dataset.hdf5
+  --dataset_file <ISAAC_19_ROOT>/19_SMMG/datasets/dataset.hdf5
 ```
 
 如果回放成功，说明 HDF5 观察/动作空间正确。

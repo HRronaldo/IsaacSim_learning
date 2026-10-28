@@ -1,4 +1,4 @@
-﻿# Lab19 总览：SMMG / Isaac Lab 模仿学习
+# Lab19 总览：SMMG / Isaac Lab 模仿学习
 
 > 原始资料：`IsaacSim_19/19_smmg_lab_instructions/lab_instructions/`  
 > 主题：使用 Isaac Lab + Cosmos 的合成数据生成与模仿学习。  
@@ -89,9 +89,11 @@ isaaclab.bat -p scripts/...
 路径也要换成本地路径，例如：
 
 ```text
-E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\datasets\
-E:\programee\IsaacSim_learning\IsaacSim_19\19_SMMG\training_logs\
+<ISAAC_19_ROOT>/19_SMMG/datasets/
+<ISAAC_19_ROOT>/19_SMMG/training_logs/
 ```
+
+> `<ISAAC_19_ROOT>` 指 NVIDIA GTC Lab19 官方课程目录（即 `19_SMMG/` 的上一级）。原始数据集与训练日志体积大且属第三方材料，**不随本仓库分发**，请按官方流程自行生成。
 
 任务名：
 
