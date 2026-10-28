@@ -1,0 +1,547 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (5, 0, 0)
+                double radius = 5
+            }
+            dictionary Perspective = {
+                double3 position = (2.1200516788695203, 0.18629563663143575, 0.8729794060739315)
+                double3 target = (0.30558093008436527, 0.08139915635113523, -0.44725211962390454)
+            }
+            dictionary Right = {
+                double3 position = (0, -5, 0)
+                double radius = 5
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 5)
+                double radius = 5
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        string creator = "URDF USD Converter v0.3.2"
+        dictionary omni_layer = {
+            string authoring_layer = "./ur10_with_gripper.usda"
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+        dictionary renderSettings = {
+        }
+    }
+    defaultPrim = "ur10"
+    endTimeCode = 1000000
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = 0
+    upAxis = "Z"
+)
+
+def Xform "ur10" (
+    prepend references = @./payloads/base.usda@
+    append variantSets = "Physics"
+)
+{
+    over "Geometry"
+    {
+        over "world"
+        {
+            over "base_link"
+            {
+                over "base_link_inertia"
+                {
+                    vector3f physics:angularVelocity = (0, 0, 0)
+                    rel physics:simulationOwner
+                    vector3f physics:velocity = (0, 0, 0)
+                    quatf xformOp:orient = (6.123234e-17, 0, 0, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+
+                    over "shoulder_link"
+                    {
+                        vector3f physics:angularVelocity = (0, 0, 0)
+                        rel physics:simulationOwner
+                        vector3f physics:velocity = (0, 0, 0)
+                        quatf xformOp:orient = (1, 0, 0, -2.9802322e-8)
+                        double3 xformOp:translate = (3.725290298461914e-9, 4.562165038977444e-25, 0.12730000913143158)
+
+                        over "upper_arm_link"
+                        {
+                            vector3f physics:angularVelocity = (0, 0, 0)
+                            rel physics:simulationOwner
+                            vector3f physics:velocity = (0, 0, 0)
+                            quatf xformOp:orient = (0.70710677, 0.70710677, 2.1136659e-8, -7.876954e-8)
+                            double3 xformOp:translate = (-1.862645149230957e-8, -1.4901161193847656e-8, 0)
+
+                            over "forearm_link"
+                            {
+                                vector3f physics:angularVelocity = (0, 0, 0)
+                                rel physics:simulationOwner
+                                vector3f physics:velocity = (0, 0, 0)
+                                quatf xformOp:orient = (1, -1.01428185e-7, 2.4450786e-8, 1.9023128e-7)
+                                double3 xformOp:translate = (-0.6119998693466187, -1.1962860035907852e-8, 3.4980011776042375e-8)
+
+                                over "wrist_1_link"
+                                {
+                                    vector3f physics:angularVelocity = (0, 0, 0)
+                                    rel physics:simulationOwner
+                                    vector3f physics:velocity = (0, 0, 0)
+                                    quatf xformOp:orient = (1, -5.9252116e-8, 4.6013977e-8, 1.9178744e-7)
+                                    double3 xformOp:translate = (-0.5723000764846802, -1.795561956896563e-7, 0.16394102573394775)
+
+                                    over "wrist_2_link"
+                                    {
+                                        vector3f physics:angularVelocity = (0, 0, 0)
+                                        rel physics:simulationOwner
+                                        vector3f physics:velocity = (0, 0, 0)
+                                        quatf xformOp:orient = (0.7071068, 0.70710677, 1.801854e-7, 1.8577279e-7)
+                                        double3 xformOp:translate = (4.4610317218030104e-8, -0.11569995433092117, -8.998968681339647e-9)
+
+                                        over "wrist_3_link"
+                                        {
+                                            string isaac:nameOverride (
+                                                displayName = "Name Override"
+                                            )
+                                            vector3f physics:angularVelocity = (0, 0, 0)
+                                            rel physics:simulationOwner
+                                            vector3f physics:velocity = (0, 0, 0)
+                                            quatf xformOp:orient = (0.7071068, -0.70710677, -1.3121817e-7, -1.348338e-7)
+                                            double3 xformOp:translate = (8.243323357248755e-9, 0.09220001101493835, 8.30071034130242e-9)
+
+                                            over "flange"
+                                            {
+                                                over "tool0"
+                                                {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        over "shoulder_pan_joint"
+        {
+            float drive:angular:physics:maxForce = 1000000000
+            float drive:angular:physics:targetPosition = 0
+            bool[] isaac:actuator (
+                displayName = "Actuator"
+            )
+            string isaac:NameOverride (
+                displayName = "Joint Name Override"
+            )
+            token[] isaac:physics:DofOffsetOpOrder (
+                displayName = "Dof Offset Op Order"
+            )
+            float physics:lowerLimit = -360
+            float physics:upperLimit = 360
+            float state:angular:physics:position = 0.0000047964977
+            float state:angular:physics:velocity = 0
+        }
+
+        over "shoulder_lift_joint"
+        {
+            float drive:angular:physics:maxForce = 1000000000
+            float drive:angular:physics:targetPosition = 0
+            bool[] isaac:actuator (
+                displayName = "Actuator"
+            )
+            string isaac:NameOverride (
+                displayName = "Joint Name Override"
+            )
+            token[] isaac:physics:DofOffsetOpOrder (
+                displayName = "Dof Offset Op Order"
+            )
+            float physics:lowerLimit = -360
+            float physics:upperLimit = 360
+            float state:angular:physics:position = 0.000016817514
+            float state:angular:physics:velocity = 0
+        }
+
+        over "elbow_joint"
+        {
+            float drive:angular:physics:targetPosition = 0
+            float physics:lowerLimit = -180
+            float physics:upperLimit = 180
+            float state:angular:physics:position = 0.000022831755
+            float state:angular:physics:velocity = 0
+        }
+
+        over "wrist_1_joint"
+        {
+            float drive:angular:physics:targetPosition = 0
+            float physics:lowerLimit = -360
+            float physics:upperLimit = 360
+            float state:angular:physics:position = -0.000018496845
+            float state:angular:physics:velocity = 0
+        }
+
+        over "wrist_2_joint"
+        {
+            float drive:angular:physics:targetPosition = 0
+            float physics:lowerLimit = -360
+            float physics:upperLimit = 360
+            float state:angular:physics:position = -0.0000016279637
+            float state:angular:physics:velocity = 0
+        }
+
+        over "wrist_3_joint"
+        {
+            float drive:angular:physics:targetPosition = 0
+            float physics:lowerLimit = -360
+            float physics:upperLimit = 360
+            float state:angular:physics:position = -0.000034846093
+            float state:angular:physics:velocity = 0
+        }
+
+        over "tn__base_linkbase_link_inertia_kc0"
+        {
+            bool[] isaac:actuator (
+                displayName = "Actuator"
+            )
+            string isaac:NameOverride (
+                displayName = "Joint Name Override"
+            )
+            token[] isaac:physics:DofOffsetOpOrder (
+                displayName = "Dof Offset Op Order"
+            )
+        }
+    }
+
+    def Xform "robotiq_2f_140" (
+        references = @../robotiq_2f_140/robotiq_2f_140.usda@
+    )
+    {
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        matrix4d xformOp:transform = ( (-1.0000000000000004, -6.407705366746423e-16, 3.698725850815563e-16, 0), (8.139617729989779e-16, 3.422854177870251e-8, 0.9999999999999996, 0), (-1.966813394847788e-16, 0.9999999999999996, -3.422854222279172e-8, 0), (1.1843, 0.25614099601602675, 0.011599988095706136, 1) )
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "Physics"
+        {
+            over "root_joint" (
+                active = false
+            )
+            {
+                bool[] isaac:actuator (
+                    displayName = "Actuator"
+                )
+                string isaac:NameOverride (
+                    displayName = "Joint Name Override"
+                )
+                token[] isaac:physics:DofOffsetOpOrder (
+                    displayName = "Dof Offset Op Order"
+                )
+            }
+
+            over "finger_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_outer_knuckle_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_inner_finger_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_inner_finger_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            def PhysicsFixedJoint "gripper_fixed_joint"
+            {
+                rel physics:body0 = </ur10/robotiq_2f_140/Geometry/robotiq_arg2f_base_link>
+                rel physics:body1 = </ur10/Geometry/world/base_link/base_link_inertia/shoulder_link/upper_arm_link/forearm_link/wrist_1_link/wrist_2_link/wrist_3_link>
+                point3f physics:localPos0 = (0, 0, 0)
+                point3f physics:localPos1 = (-4.440892e-16, -9.436896e-16, 4.3021142e-16)
+                quatf physics:localRot0 = (1, 0, 0, 0)
+                quatf physics:localRot1 = (1, -2.220446e-16, 2.220446e-16, 2.2204459e-16)
+            }
+        }
+
+        over "Geometry"
+        {
+            over "robotiq_arg2f_base_link"
+            {
+                string isaac:nameOverride (
+                    displayName = "Name Override"
+                )
+
+                over "left_outer_knuckle"
+                {
+                    over "left_outer_finger"
+                    {
+                        over "left_inner_finger"
+                        {
+                            over "left_inner_finger_pad"
+                            {
+                                over "box_1"
+                                {
+                                    rel physics:simulationOwner
+                                }
+                            }
+                        }
+                    }
+                }
+
+                over "right_outer_knuckle"
+                {
+                    over "right_outer_finger"
+                    {
+                        over "right_inner_finger"
+                        {
+                            over "right_inner_finger_pad"
+                            {
+                                over "box_1"
+                                {
+                                    rel physics:simulationOwner
+                                }
+                            }
+                        }
+                    }
+                }
+
+                over "left_inner_knuckle"
+                {
+                }
+
+                over "right_inner_knuckle"
+                {
+                }
+            }
+        }
+    }
+
+    def PhysicsFixedJoint "base_fixed_joint"
+    {
+        rel physics:body0 = None
+        rel physics:body1 = </ur10/Geometry/world/base_link/base_link_inertia>
+        point3f physics:localPos0 = (0, 0, 0)
+        quatf physics:localRot0 = (6.123234e-17, 0, 0, 1)
+    }
+    variantSet "Physics" = {
+        "mujoco" (
+            prepend payload = @./payloads/Physics/mujoco.usda@
+        ) {
+
+        }
+        "none" {
+
+        }
+        "physics" (
+            prepend payload = @./payloads/Physics/physics.usda@
+        ) {
+
+        }
+        "physx" (
+            prepend payload = @./payloads/Physics/physx.usda@
+        ) {
+
+        }
+    }
+}
+
+def "Render" (
+    hide_in_stage_window = true
+    no_delete = true
+)
+{
+    def "OmniverseKit"
+    {
+        def "HydraTextures" (
+            hide_in_stage_window = true
+            no_delete = true
+        )
+        {
+            def RenderProduct "omni_kit_widget_viewport_ViewportTexture_0" (
+                prepend apiSchemas = ["OmniRtxSettingsCommonAdvancedAPI_1", "OmniRtxSettingsRtAdvancedAPI_1", "OmniRtxSettingsPtAdvancedAPI_1", "OmniRtxSettingsParticleFieldAPI_1", "OmniRtxPostColorGradingAPI_1", "OmniRtxPostChromaticAberrationAPI_1", "OmniRtxPostBloomPhysicalAPI_1", "OmniRtxPostMatteObjectAPI_1", "OmniRtxPostCompositingAPI_1", "OmniRtxPostDofAPI_1", "OmniRtxPostMotionBlurAPI_1", "OmniRtxPostTvNoiseAPI_1", "OmniRtxPostTonemapIrayReinhardAPI_1", "OmniRtxPostDebugSettingsAPI_1", "OmniRtxDebugSettingsAPI_1"]
+                hide_in_stage_window = true
+                no_delete = true
+            )
+            {
+                rel camera = </OmniverseKit_Persp>
+                token omni:rtx:ambientOcclusion:denoiserMode = "none"
+                token omni:rtx:background:source:texture:textureMode = "repeatMirrored"
+                token omni:rtx:background:source:type = "domeLight"
+                bool omni:rtx:debug:view:pixelDebug:enableFixedTextPos = 1
+                token omni:rtx:directLighting:sampledLighting:denoisingTechnique = "None"
+                bool omni:rtx:dlss:frameGeneration = 0
+                bool omni:rtx:indirectDiffuse:denoiser:enabled = 0
+                bool omni:rtx:material:db:syncLoads = 1
+                token omni:rtx:post:dlss:execMode = "performance"
+                bool omni:rtx:post:registeredCompositing:invertColorCorrection = 1
+                bool omni:rtx:post:registeredCompositing:invertToneMap = 1
+                bool omni:rtx:pt:adaptiveSampling:filterError = 0
+                uint omni:rtx:pt:adaptiveSampling:fixedSppIterations = 2
+                uint omni:rtx:pt:maxSamplesPerLaunch = 2073600
+                uint omni:rtx:pt:mgpu:maxPixelsPerRegionExponent = 12
+                bool omni:rtx:reflections:denoiser:enabled = 0
+                token omni:rtx:rendermode = "RealTimePathTracing"
+                color3f omni:rtx:rt:ambientLight:color = (0.1, 0.1, 0.1)
+                bool omni:rtx:rt:demoire = 0
+                bool omni:rtx:rt:ecoMode:enabled
+                bool omni:rtx:rt:lightcache:spatialCache:dontResolveConflicts = 1
+                int omni:rtx:rt:sss:samples = 1
+                uint omni:rtx:rtpt:maxVolumeBounces = 15
+                float omni:rtx:rtpt:modulatingRoughnessThreshold = 0.08
+                bool omni:rtx:scene:hydra:materialSyncLoads = 1
+                bool omni:rtx:scene:hydra:mdlMaterialWarmup = 1
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (1280, 720)
+            }
+        }
+    }
+
+    def RenderSettings "OmniverseGlobalRenderSettings" (
+        prepend apiSchemas = ["OmniRtxSettingsGlobalRtAdvancedAPI_1", "OmniRtxSettingsGlobalPtAdvancedAPI_1"]
+        no_delete = true
+    )
+    {
+        rel products = </Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0>
+    }
+
+    def "Vars" (
+        hide_in_stage_window = true
+        no_delete = true
+    )
+    {
+        def RenderVar "LdrColor" (
+            hide_in_stage_window = true
+            no_delete = true
+        )
+        {
+            uniform string sourceName = "LdrColor"
+            uniform token sourceType = "raw"
+        }
+    }
+}
+
+over "OmniverseKit_Persp" (
+    prepend apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (0.01, 10000000)
+    float exposure:fStop = 5
+    float exposure:responsivity = 1.1026709
+    float exposure:time = 0.02
+    float focalLength = 18.147562
+    float focusDistance = 400
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -2.2464012667416724)
+    float3 xformOp:rotateXYZ = (54.00536, 1.9083329e-14, 93.30865)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (2.1200516788695203, 0.18629563663143575, 0.8729794060739315)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Front" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 50
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -5)
+    token projection = "orthographic"
+    float verticalAperture = 50
+    float3 xformOp:rotateXYZ = (90, -1.2722219e-14, 90)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (5, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Right" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 50
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -5)
+    token projection = "orthographic"
+    float verticalAperture = 50
+    float3 xformOp:rotateXYZ = (90, 7.06225e-31, -1.2722219e-14)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, -5, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Top" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 50
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -5)
+    token projection = "orthographic"
+    float verticalAperture = 50
+    float3 xformOp:rotateXYZ = (1.2722219e-14, -7.016709e-15, -90)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 5)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+def PhysicsScene "PhysicsScene" (
+    prepend apiSchemas = ["NewtonSceneAPI", "PhysxSceneAPI"]
+)
+{
+}
+

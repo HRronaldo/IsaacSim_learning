@@ -1,0 +1,421 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.3.2"
+    }
+    defaultPrim = "robotiq_arg2f_140_model"
+    doc = """Generated from Composed Stage of root layer E:\\programee\\IsaacSim_learning\\work\\lab16\\robotiq_2f_140\\payloads\\base.usd
+"""
+    endTimeCode = 1000000
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = 0
+    subLayers = [
+        @./robot.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "robotiq_arg2f_140_model" (
+    prepend apiSchemas = ["GeomModelAPI"]
+    assetInfo = {
+        string name = "robotiq_arg2f_140_model"
+    }
+    kind = "component"
+)
+{
+    float3[] extentsHint = [(-0.0375, -0.12472856, -0.0027397776), (0.0375, 0.12472855, 0.2094631), (3.4028235e38, 3.4028235e38, 3.4028235e38), (-3.4028235e38, -3.4028235e38, -3.4028235e38), (3.4028235e38, 3.4028235e38, 3.4028235e38), (-3.4028235e38, -3.4028235e38, -3.4028235e38), (-0.0375, -0.12472856, -0.0027397776), (0.0375, 0.12472855, 0.2119631)]
+
+    def Scope "Materials"
+    {
+        def Material "material_5" (
+            instanceable = true
+            prepend references = @./materials.usda@</Materials/material_5>
+        )
+        {
+        }
+
+        def Material "material_10" (
+            instanceable = true
+            prepend references = @./materials.usda@</Materials/material_5>
+        )
+        {
+        }
+    }
+
+    def Scope "Geometry"
+    {
+        def Xform "robotiq_arg2f_base_link"
+        {
+            def Xform "robotiq_arg2f_base_link" (
+                instanceable = true
+                prepend references = @./instances.usda@</Instances/robotiq_arg2f_base_link>
+            )
+            {
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Xform "left_outer_knuckle"
+            {
+                quatf xformOp:orient = (0.410405, 0.9119034, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -0.030601, 0.054905)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "robotiq_arg2f_140_outer_knuckle" (
+                    instanceable = true
+                    prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_outer_knuckle>
+                )
+                {
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                def Xform "left_outer_finger"
+                {
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0.01821998610742, 0.0260018192872234)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def Xform "robotiq_arg2f_140_outer_finger" (
+                        instanceable = true
+                        prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_outer_finger>
+                    )
+                    {
+                        quatd xformOp:orient = (1, 0, 0, 0)
+                        double3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                    }
+
+                    def Xform "left_inner_finger"
+                    {
+                        quatf xformOp:orient = (0.93501323, -0.35461283, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, 0.0817554015893473, -0.0282203446692936)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def Xform "robotiq_arg2f_140_inner_finger" (
+                            instanceable = true
+                            prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_inner_finger>
+                        )
+                        {
+                            quatd xformOp:orient = (1, 0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+
+                        def Xform "left_inner_finger_pad"
+                        {
+                            quatf xformOp:orient = (1, 0, 0, 0)
+                            float3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0.0457554015893473, -0.0272203446692936)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            def Cube "box" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                rel material:binding = </robotiq_arg2f_140_model/Materials/material_5>
+                                double size = 1
+                                quatf xformOp:orient = (1, 0, 0, 0)
+                                float3 xformOp:scale = (0.027, 0.065, 0.0075)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                            }
+
+                            def Cube "box_1" (
+                                prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                displayName = "box"
+                            )
+                            {
+                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                uniform token purpose = "guide"
+                                double size = 1
+                                quatf xformOp:orient = (1, 0, 0, 0)
+                                float3 xformOp:scale = (0.03, 0.07, 0.0075)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                def Scope "material"
+                                {
+                                    custom string urdf:name = ""
+
+                                    def Scope "color"
+                                    {
+                                        custom string urdf:rgba = "0.9 0.0 0.0 1"
+                                    }
+                                }
+                            }
+                        }
+
+                        def Xform "robotiq_arg2f_140_inner_finger_1" (
+                            displayName = "robotiq_arg2f_140_inner_finger"
+                            instanceable = true
+                            prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_inner_finger_1_1>
+                        )
+                        {
+                            quatd xformOp:orient = (1, 0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+                    }
+
+                    def Xform "robotiq_arg2f_140_outer_finger_1" (
+                        displayName = "robotiq_arg2f_140_outer_finger"
+                        instanceable = true
+                        prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_outer_finger_1_1>
+                    )
+                    {
+                        quatd xformOp:orient = (1, 0, 0, 0)
+                        double3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                    }
+                }
+
+                def Xform "robotiq_arg2f_140_outer_knuckle_1" (
+                    displayName = "robotiq_arg2f_140_outer_knuckle"
+                    instanceable = true
+                    prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_outer_knuckle_1_1>
+                )
+                {
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+            }
+
+            def Xform "left_inner_knuckle"
+            {
+                quatf xformOp:orient = (0.410405, 0.9119034, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -0.0127, 0.06142)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "robotiq_arg2f_140_inner_knuckle" (
+                    instanceable = true
+                    prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_inner_knuckle>
+                )
+                {
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                def Xform "robotiq_arg2f_140_inner_knuckle_1" (
+                    displayName = "robotiq_arg2f_140_inner_knuckle"
+                    instanceable = true
+                    prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_inner_knuckle_1_1>
+                )
+                {
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+            }
+
+            def Xform "right_outer_knuckle"
+            {
+                quatf xformOp:orient = (6.123234e-17, 3.7327554e-17, 0.9119033, 0.410405)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0.030601, 0.054905)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "robotiq_arg2f_140_outer_knuckle" (
+                    instanceable = true
+                    prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_outer_knuckle_1>
+                )
+                {
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                def Xform "right_outer_finger"
+                {
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0.01821998610742, 0.0260018192872234)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def Xform "robotiq_arg2f_140_outer_finger" (
+                        instanceable = true
+                        prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_outer_finger_1>
+                    )
+                    {
+                        quatd xformOp:orient = (1, 0, 0, 0)
+                        double3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                    }
+
+                    def Xform "right_inner_finger"
+                    {
+                        quatf xformOp:orient = (0.93501323, -0.35461283, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, 0.0817554015893473, -0.0282203446692936)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def Xform "robotiq_arg2f_140_inner_finger" (
+                            instanceable = true
+                            prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_inner_finger_1>
+                        )
+                        {
+                            quatd xformOp:orient = (1, 0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+
+                        def Xform "right_inner_finger_pad"
+                        {
+                            quatf xformOp:orient = (1, 0, 0, 0)
+                            float3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0.0457554015893473, -0.0272203446692936)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            def Cube "box" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                rel material:binding = </robotiq_arg2f_140_model/Materials/material_10>
+                                double size = 1
+                                quatf xformOp:orient = (1, 0, 0, 0)
+                                float3 xformOp:scale = (0.027, 0.065, 0.0075)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                            }
+
+                            def Cube "box_1" (
+                                prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                displayName = "box"
+                            )
+                            {
+                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                uniform token purpose = "guide"
+                                double size = 1
+                                quatf xformOp:orient = (1, 0, 0, 0)
+                                float3 xformOp:scale = (0.03, 0.07, 0.0075)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                def Scope "material"
+                                {
+                                    custom string urdf:name = ""
+
+                                    def Scope "color"
+                                    {
+                                        custom string urdf:rgba = "0.9 0.0 0.0 1"
+                                    }
+                                }
+                            }
+                        }
+
+                        def Xform "robotiq_arg2f_140_inner_finger_1" (
+                            displayName = "robotiq_arg2f_140_inner_finger"
+                            instanceable = true
+                            prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_inner_finger_1_1>
+                        )
+                        {
+                            quatd xformOp:orient = (1, 0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+                    }
+
+                    def Xform "robotiq_arg2f_140_outer_finger_1" (
+                        displayName = "robotiq_arg2f_140_outer_finger"
+                        instanceable = true
+                        prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_outer_finger_1_1>
+                    )
+                    {
+                        quatd xformOp:orient = (1, 0, 0, 0)
+                        double3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                    }
+                }
+
+                def Xform "robotiq_arg2f_140_outer_knuckle_1" (
+                    displayName = "robotiq_arg2f_140_outer_knuckle"
+                    instanceable = true
+                    prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_outer_knuckle_1_1>
+                )
+                {
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+            }
+
+            def Xform "right_inner_knuckle"
+            {
+                quatf xformOp:orient = (-1.6081226e-16, -7.4348396e-17, 0.9119033, 0.410405)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0.0127, 0.06142)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "robotiq_arg2f_140_inner_knuckle" (
+                    instanceable = true
+                    prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_inner_knuckle_1>
+                )
+                {
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                def Xform "robotiq_arg2f_140_inner_knuckle_1" (
+                    displayName = "robotiq_arg2f_140_inner_knuckle"
+                    instanceable = true
+                    prepend references = @./instances.usda@</Instances/robotiq_arg2f_140_inner_knuckle_1_1>
+                )
+                {
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+            }
+
+            def Xform "robotiq_arg2f_base_link_1" (
+                displayName = "robotiq_arg2f_base_link"
+                instanceable = true
+                prepend references = @./instances.usda@</Instances/robotiq_arg2f_base_link_1>
+            )
+            {
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+        }
+    }
+
+    def Scope "Physics"
+    {
+    }
+
+    def Scope "VisualMaterials"
+    {
+    }
+}
+
