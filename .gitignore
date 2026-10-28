@@ -18,6 +18,10 @@ instructions_sil/
 work/backups/
 work/logs/
 
+# ---------- 内部文档：不发布到 GitBook ----------
+docs/TEMPLATE.md
+docs/assets/README.md
+
 # ---------- AI 工具 / 依赖 ----------
 .omo/
 node_modules/

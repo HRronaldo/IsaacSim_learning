@@ -100,7 +100,6 @@ M6 关键验收：
 docs/
 ├─ README.md
 ├─ SUMMARY.md                  GitBook 导航
-├─ TEMPLATE.md
 ├─ shared/
 │  ├─ 00_environment.md
 │  ├─ 01_isaac_sim_basics.md
@@ -126,7 +125,6 @@ docs/
 ├─ notes/
 ├─ optional/
 └─ assets/
-   ├─ README.md
    └─ raw/
 ```
 
@@ -140,13 +138,9 @@ docs/
 - 跨 Lab 的版本问题放 `shared/version_traps.md`
 - 原始笔记放 `notes/`，不作为主教程
 - 教程图片放各 Lab 的 `assets/`，原始截图放 `assets/raw/`
-- 新章节模板：[TEMPLATE.md](TEMPLATE.md)
-- 图片规范：[assets/README.md](assets/README.md)
 
 ---
 
 ## 相关链接
 
 - [导航目录](SUMMARY.md)
-- [新章节模板](TEMPLATE.md)
-- [图片规范](assets/README.md)
