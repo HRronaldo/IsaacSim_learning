@@ -50,9 +50,8 @@
 | 14 | Lab19 GR00T-Mimic | [lab19/02_groot_mimic.md](lab19/02_groot_mimic.md) | 完成（10 + 200 条） |
 | 15 | Lab19 BC-RNN | [lab19/03_bc_rnn.md](lab19/03_bc_rnn.md) | 完成（40% success） |
 | 16 | Lab19 踩坑记录 | [lab19/04_pitfalls.md](lab19/04_pitfalls.md) | 已记录 |
-| 17 | 原始笔记归档 | [notes/README.md](notes/README.md) | 归档 |
-| 18 | 可选 Lab18 ROS | [optional/lab18_isaac_ros.md](optional/lab18_isaac_ros.md) | 跳过 |
-| 19 | 可选 MEGA SIL | [optional/mega_sil.md](optional/mega_sil.md) | 跳过 |
+| 17 | 可选 Lab18 ROS | [optional/lab18_isaac_ros.md](optional/lab18_isaac_ros.md) | 跳过 |
+| 18 | 可选 MEGA SIL | [optional/mega_sil.md](optional/mega_sil.md) | 跳过 |
 
 > **完整性由本表 + 每章验收清单证明，而不是文件名里的全局编号。**
 
@@ -122,13 +121,6 @@ docs/
 │  ├─ 03_bc_rnn.md
 │  ├─ 04_pitfalls.md
 │  └─ assets/
-├─ notes/
-│  ├─ README.md
-│  ├─ day01_start.md
-│  ├─ day02_start.md
-│  ├─ day03_start.md
-│  ├─ lab16_m1.md
-│  └─ english_glossary.md
 ├─ optional/
 │  ├─ lab18_isaac_ros.md
 │  └─ mega_sil.md
@@ -144,7 +136,6 @@ docs/
 - 总顺序看本页课程表，不在文件名里写全局序号
 - 踩坑记录放各 Lab 的 `pitfalls.md`
 - 跨 Lab 的版本问题放 `shared/version_traps.md`
-- 原始笔记放 `notes/`，不作为主教程
 - 教程图片放各 Lab 的 `assets/`，原始截图放 `assets/raw/`
 
 ---

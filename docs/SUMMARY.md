@@ -22,12 +22,5 @@
   - [03 BC-RNN 训练](lab19/03_bc_rnn.md)
   - [04 踩坑记录](lab19/04_pitfalls.md)
 
-- [原始笔记](notes/README.md)
-  - [Day 1 速查](notes/day01_start.md)
-  - [Day 2 速查](notes/day02_start.md)
-  - [Day 3 速查](notes/day03_start.md)
-  - [Lab16 M1 笔记](notes/lab16_m1.md)
-  - [英文词汇](notes/english_glossary.md)
-
 - [可选：Lab18 Isaac ROS](optional/lab18_isaac_ros.md)
 - [可选：MEGA SIL](optional/mega_sil.md)
