@@ -1,4 +1,4 @@
-﻿# Day 2 速查卡：导入 UR10e（官方 Isaac Sim 6.1 版）
+# Day 2 速查卡：导入 UR10e（官方 Isaac Sim 6.1 版）
 
 > 目标：把 UR10e 的 URDF 转成 USD，并让 6 个关节稳定地跟随目标位置。
 > 官方教程：
@@ -14,7 +14,7 @@
 
 我已生成修复版（14 个网格全部存在）：
 
-`E:/programee/IsaacSim_learning/work/lab16/ur10/ur10.urdf`
+`work/lab16/ur10/ur10.urdf`
 
 **请导入这个修复版。**
 
@@ -24,7 +24,7 @@
 
 | 选项 | 填什么 | 说明 |
 |---|---|---|
-| **USD Output** | `E:/programee/IsaacSim_learning/work/lab16/ur10` | 点 Select File / 文件夹图标选择 |
+| **USD Output** | `work/lab16/ur10` | 点 Select File / 文件夹图标选择 |
 | **ROS Package List** | 留空 | 修复版用绝对路径，不需要 package:// |
 | **Collision From Visuals** | 不勾 | URDF 自带 collision 网格 |
 | **Allow Self-Collision** | 先不勾 | 第一遍避免自碰撞抖动；需要时再开 |

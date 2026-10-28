@@ -116,12 +116,12 @@ work/lab19/play_record.py
 它使用 Isaac Lab 的 `VideoRecorderCfg` + `visualizer:kit`，自动写 mp4。
 
 ```bash
-./isaaclab.bat -p E:/programee/IsaacSim_learning/work/lab19/play_record.py \
+./isaaclab.bat -p work/lab19/play_record.py \
   --task IsaacContrib-Stack-Cube-Franka-IK-Rel \
-  --checkpoint E:/programee/IsaacSim_learning/IsaacSim_19/19_SMMG/training_logs/IsaacContrib-Stack-Cube-Franka-IK-Rel/bc_rnn_m1_3p0/20261027124906/models/model_epoch_500.pth \
+  --checkpoint <repo>/IsaacSim_19/19_SMMG/training_logs/IsaacContrib-Stack-Cube-Franka-IK-Rel/bc_rnn_m1_3p0/20261027124906/models/model_epoch_500.pth \
   --num_rollouts 1 \
   --horizon 800 \
-  --video_dir E:/programee/IsaacSim_learning/work/lab19/videos \
+  --video_dir work/lab19/videos \
   --device cuda:0
 ```
 

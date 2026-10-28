@@ -51,8 +51,8 @@ BC-RNN（RoboMimic）训练
 安装命令（当前 `isaacsim` 环境）：
 
 ```bash
-python -m pip install -e E:/program/isaac_sim/IsaacLab/source/isaaclab_teleop --no-deps
-python -m pip install -e E:/program/isaac_sim/IsaacLab/source/isaaclab_mimic --no-deps
+python -m pip install -e <ISAACLAB_ROOT>/source/isaaclab_teleop --no-deps
+python -m pip install -e <ISAACLAB_ROOT>/source/isaaclab_mimic --no-deps
 ```
 
 ---

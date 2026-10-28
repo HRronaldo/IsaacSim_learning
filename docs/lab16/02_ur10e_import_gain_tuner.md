@@ -46,7 +46,7 @@
 
 修复方式：把相对路径改成绝对路径，生成：
 
-`E:/programee/IsaacSim_learning/work/lab16/ur10/ur10.urdf`
+`work/lab16/ur10/ur10.urdf`
 
 （14 个网格全部存在，已预验证。）
 
@@ -62,7 +62,7 @@
 
 | 选项 | 填什么 | 原因 |
 |---|---|---|
-| **USD Output** | `E:/programee/IsaacSim_learning/work/lab16/ur10` | 输出到工作区，不污染源目录 |
+| **USD Output** | `work/lab16/ur10` | 输出到工作区，不污染源目录 |
 | **ROS Package List** | 留空 | 修复版用绝对路径 |
 | **Collision From Visuals** | 不勾 | URDF 自带 collision 网格 |
 | **Allow Self-Collision** | 先不勾 | 避免自碰撞抖动 |
@@ -75,7 +75,7 @@
 点 **Import**。
 
 > 注意：如果 `work/lab16/ur10` 已存在，导入器会自动生成 `ur10_1`。
-> 本次实际资产在：`E:/programee/IsaacSim_learning/work/lab16/ur10_1/ur10.usda`
+> 本次实际资产在：`work/lab16/ur10_1/ur10.usda`
 
 ![Import options](assets/day02_import_options.png)
 

@@ -1,4 +1,4 @@
-﻿# Day 3 — 导入 Robotiq 2F-140 夹爪（Isaac Sim 6.1 / PhysX）
+# Day 3 — 导入 Robotiq 2F-140 夹爪（Isaac Sim 6.1 / PhysX）
 
 > 版本：Isaac Sim 6.1.0.0 / Isaac Lab 3.0.0
 > 日期：2026-10-22
@@ -27,7 +27,7 @@
 - 已完成 Day 2（UR10e 导入 + Gain Tuner）
 - 环境：`conda activate isaacsim`
 - 夹爪 URDF：
-  `E:/programee/IsaacSim_learning/IsaacSim_16/16_USD_FOR_ROBOTICS/robotiq/robotiq_2f_140_gripper_visualization/2f_140/urdf/robotiq_2f_140.urdf`
+  `<repo>/IsaacSim_16/16_USD_FOR_ROBOTICS/robotiq/robotiq_2f_140_gripper_visualization/2f_140/urdf/robotiq_2f_140.urdf`
 - 该 URDF 的 `../meshes/...` 路径已验证全部有效，不需要修复。
 
 ---
@@ -40,7 +40,7 @@
 
 | 选项 | 填什么 | 原因 |
 |---|---|---|
-| **USD Output** | `E:/programee/IsaacSim_learning/work/lab16/robotiq_2f_140` | 输出到工作区 |
+| **USD Output** | `work/lab16/robotiq_2f_140` | 输出到工作区 |
 | **ROS Package List** | 留空 | URDF 用相对路径 `../meshes` |
 | **Collision From Visuals** | 不勾 | URDF 自带 collision 网格 |
 | **Allow Self-Collision** | 先不勾 | 避免自碰撞抖动 |

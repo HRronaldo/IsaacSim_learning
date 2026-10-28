@@ -1,7 +1,7 @@
-﻿# Lab 16 模块 1 笔记（URDF / USD 基础）
+# Lab 16 模块 1 笔记（URDF / USD 基础）
 
 > 填完这份笔记，Day 1 就算完成。
-> 参考：E:/programee/IsaacSim_learning/docs/notes/day01_start.md
+> 参考：<repo>/docs/notes/day01_start.md
 
 ## 0. 环境信息
 

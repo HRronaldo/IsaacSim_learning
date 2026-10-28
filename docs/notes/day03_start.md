@@ -1,4 +1,4 @@
-﻿# Day 3 速查卡：导入 Robotiq 2F-140 夹爪（Lab 16 模块 2b）
+# Day 3 速查卡：导入 Robotiq 2F-140 夹爪（Lab 16 模块 2b）
 
 > 目标：把夹爪 URDF 转成 USD，播放时夹爪不塌陷，并对照预期关节参数。
 > 教程页：`.../02_Import-robots-using-Importer/0202_Import-2F-140.html`
@@ -11,9 +11,9 @@
 1. File > New
 2. File > Import
 3. 选择文件：
-   `E:/programee/IsaacSim_learning/IsaacSim_16/16_USD_FOR_ROBOTICS/robotiq/robotiq_2f_140_gripper_visualization/2f_140/urdf/robotiq_2f_140.urdf`
+   `<repo>/IsaacSim_16/16_USD_FOR_ROBOTICS/robotiq/robotiq_2f_140_gripper_visualization/2f_140/urdf/robotiq_2f_140.urdf`
 4. 导入设置：
-   - USD 输出目录：`E:/programee/IsaacSim_learning/work/lab16/robotiq_2f_140`
+   - USD 输出目录：`work/lab16/robotiq_2f_140`
    - `finger_joint` 的 Natural Frequency 设 **300**
    - 其余目标（Mimic）关节的 Natural Frequency 设 **2500**
    - 滚动到列表最底部，确保没有漏掉任何关节
