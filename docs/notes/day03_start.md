@@ -11,7 +11,7 @@
 1. File > New
 2. File > Import
 3. 选择文件：
-   `<repo>/IsaacSim_16/16_USD_FOR_ROBOTICS/robotiq/robotiq_2f_140_gripper_visualization/2f_140/urdf/robotiq_2f_140.urdf`
+   `<ISAAC_16_ROOT>/16_USD_FOR_ROBOTICS/robotiq/robotiq_2f_140_gripper_visualization/2f_140/urdf/robotiq_2f_140.urdf`
 4. 导入设置：
    - USD 输出目录：`work/lab16/robotiq_2f_140`
    - `finger_joint` 的 Natural Frequency 设 **300**

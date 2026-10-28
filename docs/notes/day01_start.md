@@ -1,7 +1,7 @@
 # Day 1 速查卡：环境 + URDF/USD 基础（Lab 16 模块 1）
 
 > 目标（30-60 分钟）：跑起 Isaac Sim GUI，理解 URDF/USD 的最基本概念，产出第一张截图。
-> 教程入口：<repo>/IsaacSim_16/16_usd_robo_lab_instructions/gtc25-16-usd-for-robotics/index.html
+> 教程入口：<ISAAC_16_ROOT>/16_usd_robo_lab_instructions/gtc25-16-usd-for-robotics/index.html
 
 ---
 
@@ -49,7 +49,7 @@ isaaclab -p <ISAACLAB_ROOT>/scripts/tools/record_demos.py --help
 4. 在 Property 面板给它加 **Rigid Body** 和 **Collider**。
 5. 点 **Play**，看立方体受重力下落。
 6. **File > Open**，打开：
-   `<repo>/IsaacSim_16/16_USD_FOR_ROBOTICS/joint_types.usd`
+   `<ISAAC_16_ROOT>/16_USD_FOR_ROBOTICS/joint_types.usd`
 7. 在 Stage 面板逐个点开 `/World` 下的关节，对照本文末尾“答案参考”。
 
 ## 4. 本机 joint_types.usd 实际内容（答案参考，别偷看，先自己找）

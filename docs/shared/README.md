@@ -38,7 +38,7 @@
 
 > **占位符约定**（教程中出现的尖括号路径请按自己的实际位置替换）：
 > - `<repo>` — 本仓库根目录，例如 `D:\code\IsaacSim_learning`
-> - `<ISAAC_16_ROOT>` / `<ISAAC_19_ROOT>` — NVIDIA 官方课程目录（`IsaacSim_16/`、`IsaacSim_19/` 的上一级），不随仓库分发
+> - `<ISAAC_16_ROOT>` / `<ISAAC_19_ROOT>` — 分别指本地的 `IsaacSim_16/`、`IsaacSim_19/` 目录（NVIDIA 官方课程资料，不随仓库分发）
 > - `<ISAACLAB_ROOT>` — Isaac Lab 安装目录，例如 `<你的安装位置>\IsaacLab`
 
 ---

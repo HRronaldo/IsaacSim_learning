@@ -118,7 +118,7 @@ work/lab19/play_record.py
 ```bash
 ./isaaclab.bat -p work/lab19/play_record.py \
   --task IsaacContrib-Stack-Cube-Franka-IK-Rel \
-  --checkpoint <repo>/IsaacSim_19/19_SMMG/training_logs/IsaacContrib-Stack-Cube-Franka-IK-Rel/bc_rnn_m1_3p0/20261027124906/models/model_epoch_500.pth \
+  --checkpoint <ISAAC_19_ROOT>/19_SMMG/training_logs/IsaacContrib-Stack-Cube-Franka-IK-Rel/bc_rnn_m1_3p0/20261027124906/models/model_epoch_500.pth \
   --num_rollouts 1 \
   --horizon 800 \
   --video_dir work/lab19/videos \

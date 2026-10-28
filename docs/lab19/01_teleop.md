@@ -53,7 +53,7 @@ cd /e/program/isaac_sim/IsaacLab
   --task IsaacContrib-Stack-Cube-Franka-IK-Rel \
   --teleop_device keyboard \
   --device cpu \
-  --dataset_file <repo>/IsaacSim_19/19_SMMG/datasets/dataset.hdf5 \
+  --dataset_file <ISAAC_19_ROOT>/19_SMMG/datasets/dataset.hdf5 \
   --num_demos 10
 ```
 

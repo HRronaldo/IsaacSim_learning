@@ -27,7 +27,7 @@
 - 已完成 Day 2（UR10e 导入 + Gain Tuner）
 - 环境：`conda activate isaacsim`
 - 夹爪 URDF：
-  `<repo>/IsaacSim_16/16_USD_FOR_ROBOTICS/robotiq/robotiq_2f_140_gripper_visualization/2f_140/urdf/robotiq_2f_140.urdf`
+  `<ISAAC_16_ROOT>/16_USD_FOR_ROBOTICS/robotiq/robotiq_2f_140_gripper_visualization/2f_140/urdf/robotiq_2f_140.urdf`
 - 该 URDF 的 `../meshes/...` 路径已验证全部有效，不需要修复。
 
 ---
