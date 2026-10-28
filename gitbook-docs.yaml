@@ -1,0 +1,12 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+
+site:
+  title: Isaac Sim 6.1 Tutorial
+  structure:
+    - type: space
+      key: isaacsim-tutorial
+      title: Isaac Sim 6.1 Tutorial
+      path: /
+      default: true
+      content:
+        directory: ./docs
