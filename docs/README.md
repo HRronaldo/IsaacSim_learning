@@ -34,10 +34,10 @@
 
 | 顺序 | 模块 | 文件 | 状态 |
 |---:|---|---|---|
-| 1 | 环境搭建 | [shared/00_environment.md](shared/00_environment.md) | 完成 |
+| 1 | 环境搭建 | [shared/README.md](shared/README.md) | 完成 |
 | 2 | Isaac Sim 基础 | [shared/01_isaac_sim_basics.md](shared/01_isaac_sim_basics.md) | 完成 |
 | 3 | 6.1 版本陷阱 | [shared/version_traps.md](shared/version_traps.md) | 完成 |
-| 4 | Lab16 总览 | [lab16/00_overview.md](lab16/00_overview.md) | 完成 |
+| 4 | Lab16 总览 | [lab16/README.md](lab16/README.md) | 完成 |
 | 5 | Lab16 M1 资产结构 | [lab16/01_asset_structure.md](lab16/01_asset_structure.md) | 完成 |
 | 6 | Lab16 M2 UR10e 导入 | [lab16/02_ur10e_import_gain_tuner.md](lab16/02_ur10e_import_gain_tuner.md) | 完成 |
 | 7 | Lab16 M3 2F-140 夹爪 | [lab16/03_robotiq_gripper.md](lab16/03_robotiq_gripper.md) | 完成 |
@@ -45,7 +45,7 @@
 | 9 | Lab16 M5 仓库场景 | [lab16/05_warehouse_scene.md](lab16/05_warehouse_scene.md) | 完成 |
 | 10 | Lab16 M6 资产优化 | [lab16/06_asset_optimization.md](lab16/06_asset_optimization.md) | **完成** |
 | 11 | Lab16 踩坑记录 | [lab16/07_pitfalls.md](lab16/07_pitfalls.md) | 完成 |
-| 12 | Lab19 总览 | [lab19/00_overview.md](lab19/00_overview.md) | 完成（M1-M3） |
+| 12 | Lab19 总览 | [lab19/README.md](lab19/README.md) | 完成（M1-M3） |
 | 13 | Lab19 遥操作 | [lab19/01_teleop.md](lab19/01_teleop.md) | 完成（1 条手动 + 官方 10 条） |
 | 14 | Lab19 GR00T-Mimic | [lab19/02_groot_mimic.md](lab19/02_groot_mimic.md) | 完成（10 + 200 条） |
 | 15 | Lab19 BC-RNN | [lab19/03_bc_rnn.md](lab19/03_bc_rnn.md) | 完成（40% success） |
@@ -98,15 +98,15 @@ M6 关键验收：
 
 ```text
 docs/
-├─ README.md
-├─ SUMMARY.md                  GitBook 导航
+├─ README.md                    本页
+├─ SUMMARY.md                   GitBook 导航
 ├─ shared/
-│  ├─ 00_environment.md
+│  ├─ README.md                 环境搭建
 │  ├─ 01_isaac_sim_basics.md
 │  ├─ version_traps.md
 │  └─ assets/
 ├─ lab16/
-│  ├─ 00_overview.md
+│  ├─ README.md                 Lab16 总览
 │  ├─ 01_asset_structure.md
 │  ├─ 02_ur10e_import_gain_tuner.md
 │  ├─ 03_robotiq_gripper.md
@@ -116,14 +116,22 @@ docs/
 │  ├─ 07_pitfalls.md
 │  └─ assets/
 ├─ lab19/
-│  ├─ 00_overview.md
+│  ├─ README.md                 Lab19 总览
 │  ├─ 01_teleop.md
 │  ├─ 02_groot_mimic.md
 │  ├─ 03_bc_rnn.md
 │  ├─ 04_pitfalls.md
 │  └─ assets/
 ├─ notes/
+│  ├─ README.md
+│  ├─ day01_start.md
+│  ├─ day02_start.md
+│  ├─ day03_start.md
+│  ├─ lab16_m1.md
+│  └─ english_glossary.md
 ├─ optional/
+│  ├─ lab18_isaac_ros.md
+│  └─ mega_sil.md
 └─ assets/
    └─ raw/
 ```
@@ -143,4 +151,4 @@ docs/
 
 ## 相关链接
 
-- [导航目录](SUMMARY.md)
+- [教程仓库](https://github.com/HRronaldo/IsaacSim_learning)

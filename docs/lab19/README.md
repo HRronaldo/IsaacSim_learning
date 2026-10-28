@@ -124,5 +124,5 @@ Isaac-Stack-Cube-Franka-IK-Rel-Mimic-v0        # Mimic 任务
 ## 7. 下一步
 
 - [01 遥操作](01_teleop.md)
-- [Lab16 总览](../lab16/00_overview.md)
+- [Lab16 总览](../lab16/README.md)
 

@@ -23,11 +23,11 @@
 - [课程地图](docs/README.md)
 - [导航目录](docs/SUMMARY.md)
 - [入门教程收尾](docs/99_course_closeout.md)
-- [环境搭建](docs/shared/00_environment.md)
+- [环境搭建](docs/shared/README.md)
 - [6.1 版本陷阱](docs/shared/version_traps.md)
-- [Lab16 总览](docs/lab16/00_overview.md)
+- [Lab16 总览](docs/lab16/README.md)
 - [Lab16 踩坑记录](docs/lab16/07_pitfalls.md)
-- [Lab19 总览](docs/lab19/00_overview.md)
+- [Lab19 总览](docs/lab19/README.md)
 - [Lab19 踩坑记录](docs/lab19/04_pitfalls.md)
 
 ---

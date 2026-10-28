@@ -159,5 +159,5 @@ IsaacSim_19\19_SMMG\checkpoints\model_epoch_2000.pth
 ## 6. 下一步
 
 - [04 Lab19 踩坑记录](04_pitfalls.md)
-- [Lab16 总结](../lab16/00_overview.md)
+- [Lab16 总结](../lab16/README.md)
 

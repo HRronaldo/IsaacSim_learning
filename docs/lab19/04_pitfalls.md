@@ -55,7 +55,7 @@
 
 ## 3. 相关文档
 
-- [Lab19 总览](00_overview.md)
+- [Lab19 总览](README.md)
 - [Lab19 遥操作](01_teleop.md)
 - [Lab19 Mimic](02_groot_mimic.md)
 - [Lab19 BC-RNN](03_bc_rnn.md)

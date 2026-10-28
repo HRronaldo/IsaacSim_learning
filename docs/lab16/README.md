@@ -72,5 +72,5 @@
 
 ## 6. 下一步
 
-- [Lab19 SMMG 总览](../lab19/00_overview.md)
+- [Lab19 SMMG 总览](../lab19/README.md)
 - [6.1 版本陷阱](../shared/version_traps.md)

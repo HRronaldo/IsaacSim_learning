@@ -149,4 +149,4 @@ python work/smoke_test.py
 ## 8. 下一步
 
 - [01 Isaac Sim 基础](01_isaac_sim_basics.md)
-- [Lab16 总览](../lab16/00_overview.md)
+- [Lab16 总览](../lab16/README.md)

@@ -113,12 +113,12 @@ Mimic 数据生成：
 
 详见：
 
-- [00 环境搭建](shared/00_environment.md)
+- [00 环境搭建](shared/README.md)
 - [01 Isaac Sim 基础](shared/01_isaac_sim_basics.md)
 
 ### Lab16
 
-- [总览](lab16/00_overview.md)
+- [总览](lab16/README.md)
 - [资产结构](lab16/01_asset_structure.md)
 - [UR10e 导入](lab16/02_ur10e_import_gain_tuner.md)
 - [2F-140 夹爪](lab16/03_robotiq_gripper.md)
@@ -129,7 +129,7 @@ Mimic 数据生成：
 
 ### Lab19
 
-- [总览](lab19/00_overview.md)
+- [总览](lab19/README.md)
 - [遥操作](lab19/01_teleop.md)
 - [Mimic](lab19/02_groot_mimic.md)
 - [BC-RNN](lab19/03_bc_rnn.md)

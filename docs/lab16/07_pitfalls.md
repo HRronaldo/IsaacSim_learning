@@ -162,7 +162,7 @@
 
 ## 15. 相关文档
 
-- [Lab16 总览](00_overview.md)
+- [Lab16 总览](README.md)
 - [2F-140 夹爪](03_robotiq_gripper.md)
 - [仓库场景](05_warehouse_scene.md)
 - [6.1 版本陷阱](../shared/version_traps.md)

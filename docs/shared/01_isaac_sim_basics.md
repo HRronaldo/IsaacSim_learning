@@ -136,5 +136,5 @@ robot.usda
 
 ## 9. 下一步
 
-- [Lab16 总览](../lab16/00_overview.md)
+- [Lab16 总览](../lab16/README.md)
 - [Lab16 M1 资产结构](../lab16/01_asset_structure.md)

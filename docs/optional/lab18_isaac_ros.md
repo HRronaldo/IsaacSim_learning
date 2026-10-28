@@ -34,5 +34,5 @@
 ## 4. 相关
 
 - [MEGA SIL](mega_sil.md)
-- [Lab16 总览](../lab16/00_overview.md)
-- [Lab19 总览](../lab19/00_overview.md)
+- [Lab16 总览](../lab16/README.md)
+- [Lab19 总览](../lab19/README.md)

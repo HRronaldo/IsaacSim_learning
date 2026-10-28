@@ -112,4 +112,4 @@ base 底板 min Z ≈ 1.2191
 ## 7. 下一步
 
 - [06 资产优化](06_asset_optimization.md)
-- [Lab19 SMMG](../lab19/00_overview.md)
+- [Lab19 SMMG](../lab19/README.md)
